@@ -5,9 +5,16 @@ export interface Transaction {
   description: string;
   date: string;
   type: 'income' | 'expense';
+  category?: string;
 }
 
 export interface MonthlyData {
   month: string;
   expenses: number;
+}
+
+export interface CategoryData {
+  category: string;
+  amount: number;
+  color: string;
 }
